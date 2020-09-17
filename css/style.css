@@ -1,0 +1,236 @@
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --basic-blue: #81B3D2;
+  --basic-bluer: #669EC0;
+  --basic-bluest: #5496BD;
+  --welcome-blue: #81B3D3;
+  --advice-text-color: #333333;
+  --popup-brown: #766357;
+  --popup-browner: #604E43;
+  --popup-brownest: #503E33;
+  --popup-search-chart-color: #F2F2F2;
+  --popup-search-chart-icon-color: #A9A9A9;
+  --page-footer-copyright-link-color: #231F20;
+  --features-background-gray: #EEEEEE;
+}
+
+body {
+font-family: "PT Sans", Arial, sans-serif;
+position: absolute;
+min-width: 1200px;
+margin: 0;
+padding: 0;
+font-size: 21px;
+line-height: 21px;
+color: var(--basic-black);
+text-transform: uppercase;
+background-color: var(--basic-white);
+background-position: top-center;
+background-repeat: no-repeat;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+}
+
+
+/* Navigation*/
+/* Прописываю размер шрифтов, цвета в навигации, убираю булиты */
+.main-nav{
+  font-size: 14px;
+line-height: 26px;
+font-weight: bold;
+color: var(--basic-black);
+background-color: var(--basic-white);
+}
+.site-nav {
+  list-style: none;
+  color: var(--basic-black);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+
+/* Features */
+/* Прописываю центрирование, размер шрифтов, цвета для секции фичерс, убираю булиты */
+.features {
+  text-align: center;
+}
+.features-title {
+font-size: 21px;
+line-height: 21px;
+font-weight: bold;
+color: var(--basic-white);
+background-color: var(--basic-blue);
+}
+.features-number {
+ font-weight: normal;
+ font-size: 14px;
+line-height: 21px;
+color: var(--basic-white);
+background-color: var(--basic-blue);
+}
+.features-text {
+ font-size: 14px;
+line-height: 21px;
+font-weight: normal;
+}
+.advice {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
+.advice-title {
+  font-weight: bold;
+font-size: 21px;
+line-height: 21px;
+color: var(--basic-black);
+background-color: var(--basic-white);
+}
+.advice-text {
+  font-size: 14px;
+line-height: 21px;
+font-weight: normal;
+color: var(--basic-black);
+background-color: var(--basic-white);
+}
+.features-additional {
+  background-color: var(--features-background-gray);
+  display: flex;
+  flex-wrap: wrap;
+  }
+.features-additional-item {
+  background-color: var(--features-background-gray);
+}
+
+/* Popup */
+/* Для попапа (поиска гостиницы) устанавливаю шрифты, цвета*/
+.search-hotel-title{
+  font-size: 30px;
+line-height: 24px;
+font-weight: bold;
+}
+.search-hotel {
+  background-color: var(--basic-white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+/*сомневаюсь насчет верхнего куска, можно ли устанавливать тень на весь попап? или нужно это установить только конкретно там, где даты, взрослые и т.п*/
+
+.search-hotel-button {
+  font-size: 21px;
+line-height: 26px;
+font-weight: bold;
+font-style: normal;
+background-color: var(--popup-brown);
+color: var(--basic-white);
+}
+.form-search-input {
+font-weight: bold;
+font-size: 14px;
+line-height: 26px;
+background-color: var(--popup-search-chart-color);
+font: inherit;
+}
+/*иконки календаря не установлены, пока не прописываю для них цвет*/
+.form-search-button-minus {
+  color: var(--popup-search-chart-icon-color);
+}
+.form-search-button-plus {
+  color: var(--popup-search-chart-icon-color);
+  transform: rotate(-90deg);
+}
+.form-search-submit {
+  font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+color: var(--basic-white);
+background-color: var(--basic-blue);
+}
+
+/* Footer */
+/* Убираю булиты, прописываю цвета и размеры шрифтов, отступов в футере */
+.page-footer-hashtag {
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+color: var(--basic-black);
+background-color: var(--basic-white);
+}
+.social-links {
+  list-style: none;
+}
+.page-footer-copyright-text {
+font-weight: normal;
+  font-size: 14px;
+line-height: 26px;
+color: var(--basic-black);
+background-color: var(--basic-white);
+}
+.phone-number {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.social-links {
+  list-style: none;
+}
+
+/* Background for images*/
+/* Устанавливаю бэкграунд для картинок в случае, если они не загружаются для юзера*/
+.main-header-logo,
+.page-main-img,
+.features-img {
+  background-color: var(--features-background-gray);
+}
+
+/* Buttons*/
+/* Прописываю hover и active для кнопок главной страницы, кроме социальных сетей, иконки календаря в попапе и лого html academy*/
+.form-search-button {
+  font: inherit;
+  text-align: center;
+  color: var(--popup-search-chart-icon-color);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--popup-search-chart-color);
+  border: none;
+}
+.search-hotel-button:hover {
+  color: var(--basic-white);
+  background-color: var(--popup-browner);
+}
+.search-hotel-button:active {
+color: var(--basic-white);
+  mix-blend-mode: normal;
+opacity: 0.3;
+background-color: var(--popup-brownest);
+}
+.form-search-submit:hover {
+  color: var(--basic-white);
+  background-color: var(--basic-bluer);
+}
+.form-search-submit:active {
+color: var(--basic-white);
+  mix-blend-mode: normal;
+opacity: 0.3;
+background-color: var(--basic-bluest);
+}
+.form-search-button-minus:hover {
+  color: var(--basic-black);
+}
+.form-search-button-minus:active{
+  color: var(--basic-blue);
+}
+.form-search-button-plus:hover {
+  color: var(--popup-search-chart-icon-color);
+transform: rotate(-90deg);
+}
+.form-search-button-plus:active {
+  color: var(--popup-search-chart-icon-color);
+transform: rotate(-90deg);
+}
