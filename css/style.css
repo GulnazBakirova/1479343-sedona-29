@@ -1,236 +1,442 @@
-
-/* Variables */
+/* ====== Variables ====== */
 
 :root {
-  --basic-black: #000000;
-  --basic-white: #FFFFFF;
+  --black: #000000;
+  --white: #FFFFFF;
   --basic-blue: #81B3D2;
-  --basic-bluer: #669EC0;
-  --basic-bluest: #5496BD;
+  --medium-blue: #669EC0;
+  --dark-blue: #5496BD;
   --welcome-blue: #81B3D3;
   --advice-text-color: #333333;
-  --popup-brown: #766357;
-  --popup-browner: #604E43;
-  --popup-brownest: #503E33;
+  --brown: #766357;
+  --medium-brown: #604E43;
+  --dark-brown: #503E33;
   --popup-search-chart-color: #F2F2F2;
   --popup-search-chart-icon-color: #A9A9A9;
   --page-footer-copyright-link-color: #231F20;
   --features-background-gray: #EEEEEE;
+  --rating: #666666;
+  --up-icon: #CACACA;
 }
 
 body {
-font-family: "PT Sans", Arial, sans-serif;
-position: absolute;
-min-width: 1200px;
-margin: 0;
-padding: 0;
-font-size: 21px;
-line-height: 21px;
-color: var(--basic-black);
-text-transform: uppercase;
-background-color: var(--basic-white);
-background-position: top-center;
-background-repeat: no-repeat;
-align-items: center;
-text-align: center;
-text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  color: var(--black);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
 }
 
 
-/* Navigation*/
+/* ====== Navigation ====== */
 /* Прописываю размер шрифтов, цвета в навигации, убираю булиты */
-.main-nav{
+
+.main-nav {
+  background-color: var(--white);
+  color: var(--black);
   font-size: 14px;
-line-height: 26px;
-font-weight: bold;
-color: var(--basic-black);
-background-color: var(--basic-white);
+  line-height: 26px;
+  font-weight: bold;
 }
+
 .site-nav {
+  text-decoration: none;
   list-style: none;
-  color: var(--basic-black);
+  color: var(--black);
 }
+
 .site-nav a:hover,
 .site-nav a:focus {
-  background-color: var(--basic-white);
-  color: var(--basic-black);
+  background-color: var(--white);
+  color: var(--black);
+}
+.main-nav-link {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+.main-nav-link-active {
+  color: var(--brown);
 }
 
 
-/* Features */
+/* ====== Features ====== */
 /* Прописываю центрирование, размер шрифтов, цвета для секции фичерс, убираю булиты */
+
 .features {
   text-align: center;
 }
+
 .features-title {
-font-size: 21px;
-line-height: 21px;
-font-weight: bold;
-color: var(--basic-white);
-background-color: var(--basic-blue);
+  background-color: var(--basic-blue);
+  color: var(--white);
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
 }
+
 .features-number {
- font-weight: normal;
- font-size: 14px;
-line-height: 21px;
-color: var(--basic-white);
-background-color: var(--basic-blue);
+  color: var(--white);
+  background-color: var(--basic-blue);
+  color: var(--white);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
 }
+
 .features-text {
- font-size: 14px;
-line-height: 21px;
-font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
 }
+
 .advice {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
+
 .advice-title {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 21px;
+  line-height: 21px;
   font-weight: bold;
-font-size: 21px;
-line-height: 21px;
-color: var(--basic-black);
-background-color: var(--basic-white);
 }
+
 .advice-text {
+  background-color: var(--white);
+  color: var(--black);
   font-size: 14px;
-line-height: 21px;
-font-weight: normal;
-color: var(--basic-black);
-background-color: var(--basic-white);
+  line-height: 21px;
+  font-weight: normal;
 }
+
 .features-additional {
-  background-color: var(--features-background-gray);
   display: flex;
   flex-wrap: wrap;
-  }
+  background-color: var(--features-background-gray);
+}
+
 .features-additional-item {
   background-color: var(--features-background-gray);
 }
 
-/* Popup */
+
+/* ====== Popup ====== */
 /* Для попапа (поиска гостиницы) устанавливаю шрифты, цвета*/
-.search-hotel-title{
+
+.search-hotel-title {
   font-size: 30px;
-line-height: 24px;
-font-weight: bold;
+  line-height: 24px;
+  font-weight: bold;
 }
+
 .search-hotel {
-  background-color: var(--basic-white);
+  background-color: var(--white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
-/*сомневаюсь насчет верхнего куска, можно ли устанавливать тень на весь попап? или нужно это установить только конкретно там, где даты, взрослые и т.п*/
 
+
+/*сомневаюсь насчет верхнего куска, можно ли устанавливать тень на весь попап? или нужно это установить только конкретно там, где даты, взрослые и т.п*/
 .search-hotel-button {
+  background-color: var(--brown);
+  color: var(--white);
   font-size: 21px;
-line-height: 26px;
-font-weight: bold;
-font-style: normal;
-background-color: var(--popup-brown);
-color: var(--basic-white);
+  line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
 }
+
 .form-search-input {
-font-weight: bold;
-font-size: 14px;
-line-height: 26px;
-background-color: var(--popup-search-chart-color);
-font: inherit;
+  background-color: var(--popup-search-chart-color);
+  font: inherit;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
 }
+
+
 /*иконки календаря не установлены, пока не прописываю для них цвет*/
 .form-search-button-minus {
   color: var(--popup-search-chart-icon-color);
 }
+
 .form-search-button-plus {
   color: var(--popup-search-chart-icon-color);
   transform: rotate(-90deg);
 }
+
 .form-search-submit {
+  background-color: var(--basic-blue);
+  color: var(--white);
+  font-size: 21px;
+  line-height: 26px;
   font-weight: bold;
-font-size: 21px;
-line-height: 26px;
-color: var(--basic-white);
-background-color: var(--basic-blue);
 }
 
-/* Footer */
+
+/* ====== Footer ====== */
 /* Убираю булиты, прописываю цвета и размеры шрифтов, отступов в футере */
+
 .page-footer-hashtag {
-font-weight: bold;
-font-size: 21px;
-line-height: 26px;
-color: var(--basic-black);
-background-color: var(--basic-white);
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
 }
+
 .social-links {
   list-style: none;
 }
 .page-footer-copyright-text {
-font-weight: normal;
+  background-color: var(--white);
+  color: var(--black);
   font-size: 14px;
-line-height: 26px;
-color: var(--basic-black);
-background-color: var(--basic-white);
+  line-height: 26px;
+  font-weight: normal;
 }
+
 .phone-number {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
+  background-color: var(--white);
+  color: var(--black);
 }
+
 .social-links {
   list-style: none;
 }
 
-/* Background for images*/
+.phone-number {
+  text-decoration: none;
+  font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+
+/* ====== Background for images ====== */
 /* Устанавливаю бэкграунд для картинок в случае, если они не загружаются для юзера*/
+
 .main-header-logo,
 .page-main-img,
 .features-img {
   background-color: var(--features-background-gray);
 }
 
-/* Buttons*/
+
+/* ====== Buttons ====== */
 /* Прописываю hover и active для кнопок главной страницы, кроме социальных сетей, иконки календаря в попапе и лого html academy*/
+
 .form-search-button {
-  font: inherit;
   text-align: center;
-  color: var(--popup-search-chart-icon-color);
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--popup-search-chart-color);
   border: none;
+  background-color: var(--popup-search-chart-color);
+  color: var(--popup-search-chart-icon-color);
+  font: inherit;
 }
+
 .search-hotel-button:hover {
-  color: var(--basic-white);
-  background-color: var(--popup-browner);
+  background-color: var(--medium-brown);
+  color: var(--white);
 }
+
 .search-hotel-button:active {
-color: var(--basic-white);
+  background-color: var(--dark-brown);
+  color: var(--white);
   mix-blend-mode: normal;
-opacity: 0.3;
-background-color: var(--popup-brownest);
+  opacity: 0.3;
 }
+
 .form-search-submit:hover {
-  color: var(--basic-white);
-  background-color: var(--basic-bluer);
+  background-color: var(--medium-blue);
+  color: var(--white);
 }
+
 .form-search-submit:active {
-color: var(--basic-white);
+  background-color: var(--dark-blue);
+  color: var(--white);
   mix-blend-mode: normal;
-opacity: 0.3;
-background-color: var(--basic-bluest);
+  opacity: 0.3;
 }
+
 .form-search-button-minus:hover {
-  color: var(--basic-black);
+  color: var(--black);
 }
-.form-search-button-minus:active{
+
+.form-search-button-minus:active {
   color: var(--basic-blue);
 }
+
 .form-search-button-plus:hover {
   color: var(--popup-search-chart-icon-color);
-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
+
 .form-search-button-plus:active {
   color: var(--popup-search-chart-icon-color);
-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+/* ====== Catalog ====== */
+/* ====== Filters ====== */
+/* ==прописываю черный фон для фильтров, чтобы не терялись из-за своего белого шрифта или нужно поменять?
+   ==нужно изменить стиль галочек
+*/
+
+.form-filters-legend {
+  background-color: var(--black);
+  color: var(--white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.form-filters-label {
+  background-color: var(--black);
+  color: var(--white);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.form-filters-input-text {
+  text-align: center;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.form-filters-button {
+  text-transform: uppercase;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.form-filters-label-checkbox {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.form-filters-input {
+  list-style: none;
+}
+
+
+/* ====== Hotels ======*/
+/* Не установила стили для иконок вверх и вниз */
+
+.catalog-sort {
+  list-style: none;
+}
+
+.catalog-sort-direction {
+  list-style: none;
+  /* ====== иконки вверх и вни ======*/
+}
+
+.hotel-name,
+.hotel-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.hotel-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.hotel-button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button-blue {
+  text-decoration: none;
+  background-color: var(--basic-blue);
+  color: var(--white);
+}
+
+.button-brown {
+  text-decoration: none;
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.hotel-rating-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--popup-search-chart-color);
+  color: var(--rating);
+}
+
+.visually-hidden {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.catalog-result {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.catalog-sort-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: var(--popup-search-chart-color);
+  color: var(--rating);
+}
+
+.sort-type-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: var(--white);
+  color: var(--black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.sort-type-link-active {
+  text-decoration: none;
+  background-color: var(--white);
+  color: var(--basic-blue);
 }
