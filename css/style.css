@@ -182,6 +182,16 @@ body {
   font-weight: bold;
 }
 
+.form-search-input {
+background-color: var(--white);
+}
+
+.form-search-input-text {
+  background-color: var(--popup-search-chart-color);
+  border: none;
+}
+
+
 
 /* ====== Footer ====== */
 /* Убираю булиты, прописываю цвета и размеры шрифтов, отступов в футере */
@@ -349,7 +359,7 @@ line-height: 26px;
 
 .catalog-sort-direction {
   list-style: none;
-  /* ====== иконки вверх и вни ======*/
+  /* ====== иконки вверх и вниз ======*/
 }
 
 .hotel-name,
@@ -439,4 +449,19 @@ line-height: 26px;
   text-decoration: none;
   background-color: var(--white);
   color: var(--basic-blue);
+}
+
+
+
+
+
+ /* ====== Потом распределю ======*/
+.social-links-item {
+  background-color: var(--basic-blue);
+}
+.main-header-logo {
+  background-color: var(--white);
+}
+.social-links-item {
+  display: inline;
 }
