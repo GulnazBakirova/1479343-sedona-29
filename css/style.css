@@ -23,7 +23,6 @@ body {
   text-align: center;
   align-items: center;
   text-transform: uppercase;
-  min-width: 1200px;
   margin: 0;
   padding: 0;
   background-color: var(--white);
@@ -35,6 +34,8 @@ body {
 
 
 /* ====== Navigation ====== */
+
+
 /* Прописываю размер шрифтов, цвета в навигации, убираю булиты */
 
 .main-nav {
@@ -56,51 +57,50 @@ body {
   background-color: var(--white);
   color: var(--black);
 }
+
 .main-nav-link {
   text-decoration: none;
   color: var(--black);
   font-weight: bold;
 }
+
 .main-nav-link-active {
   color: var(--brown);
 }
 
 
 /* ====== Features ====== */
+
+
 /* Прописываю центрирование, размер шрифтов, цвета для секции фичерс, убираю булиты */
 
 .features {
   text-align: center;
 }
 
-.features-title {
-  background-color: var(--basic-blue);
-  color: var(--white);
+.features-title-add {
+  background-color: var(--features-background-gray);
+  color: var(--black);
   font-size: 21px;
   line-height: 21px;
+  font-style: normal;
   font-weight: bold;
 }
 
-.features-number {
-  color: var(--white);
-  background-color: var(--basic-blue);
-  color: var(--white);
+.features-number-add {
+  background-color: var(--features-background-gray);
+  color: var(--black);
   font-size: 14px;
   line-height: 21px;
+  font-style: normal;
   font-weight: normal;
 }
 
-.features-text {
+.features-text-add {
   font-size: 14px;
   line-height: 21px;
+  font-style: normal;
   font-weight: normal;
-}
-
-.advice {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .advice-title {
@@ -120,8 +120,6 @@ body {
 }
 
 .features-additional {
-  display: flex;
-  flex-wrap: wrap;
   background-color: var(--features-background-gray);
 }
 
@@ -131,6 +129,8 @@ body {
 
 
 /* ====== Popup ====== */
+
+
 /* Для попапа (поиска гостиницы) устанавливаю шрифты, цвета*/
 
 .search-hotel-title {
@@ -146,6 +146,7 @@ body {
 
 
 /*сомневаюсь насчет верхнего куска, можно ли устанавливать тень на весь попап? или нужно это установить только конкретно там, где даты, взрослые и т.п*/
+
 .search-hotel-button {
   background-color: var(--brown);
   color: var(--white);
@@ -165,6 +166,7 @@ body {
 
 
 /*иконки календаря не установлены, пока не прописываю для них цвет*/
+
 .form-search-button-minus {
   color: var(--popup-search-chart-icon-color);
 }
@@ -183,7 +185,7 @@ body {
 }
 
 .form-search-input {
-background-color: var(--white);
+  background-color: var(--white);
 }
 
 .form-search-input-text {
@@ -192,8 +194,9 @@ background-color: var(--white);
 }
 
 
-
 /* ====== Footer ====== */
+
+
 /* Убираю булиты, прописываю цвета и размеры шрифтов, отступов в футере */
 
 .page-footer-hashtag {
@@ -207,6 +210,7 @@ background-color: var(--white);
 .social-links {
   list-style: none;
 }
+
 .page-footer-copyright-text {
   background-color: var(--white);
   color: var(--black);
@@ -227,15 +231,17 @@ background-color: var(--white);
 .phone-number {
   text-decoration: none;
   font-style: normal;
-font-weight: bold;
-font-size: 21px;
-line-height: 26px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
   background-color: var(--white);
   color: var(--black);
 }
 
 
 /* ====== Background for images ====== */
+
+
 /* Устанавливаю бэкграунд для картинок в случае, если они не загружаются для юзера*/
 
 .main-header-logo,
@@ -246,6 +252,8 @@ line-height: 26px;
 
 
 /* ====== Buttons ====== */
+
+
 /* Прописываю hover и active для кнопок главной страницы, кроме социальных сетей, иконки календаря в попапе и лого html academy*/
 
 .form-search-button {
@@ -300,8 +308,13 @@ line-height: 26px;
   transform: rotate(-90deg);
 }
 
+
 /* ====== Catalog ====== */
+
+
 /* ====== Filters ====== */
+
+
 /* ==прописываю черный фон для фильтров, чтобы не терялись из-за своего белого шрифта или нужно поменять?
    ==нужно изменить стиль галочек
 */
@@ -351,6 +364,8 @@ line-height: 26px;
 
 
 /* ====== Hotels ======*/
+
+
 /* Не установила стили для иконок вверх и вниз */
 
 .catalog-sort {
@@ -452,16 +467,341 @@ line-height: 26px;
 }
 
 
+/* ====== Потом распределю ======*/
 
 
+/* ====== Цветная обводка ======*/
 
- /* ====== Потом распределю ======*/
-.social-links-item {
-  background-color: var(--basic-blue);
+.page-header {
+  margin-bottom: 0;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
 }
+
+.main-header-logo {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.page-header {
+  margin-bottom: 0;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.page-footer {
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
+
+/* ====== Header ======*/
+
+header,
+main,
+footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .main-header-logo {
   background-color: var(--white);
 }
+
+.main-nav {
+  display: block;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.main-nav {
+  height: 56px;
+  display: block;
+  padding: 0;
+}
+
+.main-nav-item {
+  display: inline-block;
+  width: 280px;
+  line-height: 26px;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.main-navigation .left {
+  padding-left: 72px;
+  text-align: left;
+}
+
+.main-navigation .right {
+  text-align: right;
+  padding-right: 72px;
+}
+
+.main-header-logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background-color: transparent;
+}
+
+
+/* ====== Седона — небольшой городок в Аризоне ======*/
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.page-main-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-main-text {
+  margin-top: 17px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+
+/* ====== Жилье, еда, сувениры ======*/
+
+.advice {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 64px;
+  padding: 82px;
+  list-style: none;
+  column-gap: 124px;
+}
+
+
+/* ====== Features ======*/
+
+.features {
+  width: 1200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-main {
+  height: 256px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  background-color: var(--basic-blue)
+}
+
+.features-title,
+.features-number,
+.features-text {
+  text-align: center;
+  color: var(--white);
+  background-color: var(--basic-blue)
+}
+
+.features-description {
+  width: 400px;
+  height: 256px;
+}
+
+.features-title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  margin-top: 47px;
+  margin-left: 139px;
+  margin-right: 139px;
+}
+
+.features-number {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 23px;
+  padding-bottom: 54px;
+  margin-left: 52px;
+  margin-right: 51px;
+}
+
+.features-title-devil,
+.features-number-devil,
+.features-text-devil {
+  text-align: center;
+  color: var(--white);
+  background-color: var(--basic-blue)
+}
+
+.features-title-devil {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  margin-top: 50px;
+  margin-left: 126px;
+  margin-right: 125px;
+}
+
+.features-number-devil {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features-text-devil {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 23px;
+  margin-bottom: 51px;
+  margin-left: 50px;
+  margin-right: 49px;
+}
+
+
+/* ====== Небольшая площадь, красивая дорога, мало туристов ======*/
+
+.features-additional {
+  display: grid;
+  grid-auto-flow: column;
+  padding-top: 47px;
+  padding-left: 96px;
+  padding-right: 77px;
+  padding-bottom: 54px;
+  list-style: none;
+  column-gap: 168px;
+}
+
+
+/* ====== Форма поиска гостиницы ======*/
+
+.search-hotel-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.search-hotel-button {
+  width: 568px;
+  height: 86px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.form-search-input {
+  width: 568px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.form-search-submit {
+  width: 458px;
+  height: 58px;
+  text-transform: uppercase;
+  border: none;
+}
+
+
+/* ====== Footer ======*/
+
+footer {
+  height: 120px;
+}
+
+.page-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page-footer-hashtag {
+  margin-top: 23px;
+}
+
+.social-links {
+  margin-top: 36px;
+}
+
+.page-footer-down-second .social-links-item {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  vertical-align: top;
+  font-size: 0;
+}
+
 .social-links-item {
+  background-color: var(--basic-blue);
   display: inline;
 }
+
+.social-links-item,
+.twitter-img {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.social-links-item,
+.facebook-img {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.social-links-item,
+.youtube-img {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.page-footer-down-three,
+.logo-html-img {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.page-footer-down-first,
+.phone-number {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+

@@ -7,32 +7,36 @@
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/style.css">
    </head>
-   <body class="page">
+   <body class="page-body">
       <header class="page-header">
-         <img class="main-header-logo" src="img/logo.svg" alt="Логотип Седоны">
          <nav class="main-nav">
-            <ul class="site-nav">
-               <li class="main-nav-item"><a class="main-nav-link" href="blank.html">информация</a></li>
-               <li class="main-nav-item"><a class="main-nav-link" href="blank.html">фото и видео</a></li>
-               <li class="main-nav-item"><a class="main-nav-link" href="blank.html">карта штата</a></li>
-               <li class="main-nav-item"><a class="main-nav-link" href="catalog.html">гостиницы</a></li>
-            </ul>
+            <img class="main-header-logo" src="img/logo.svg" width="138" height="70" alt="Логотип Седоны">
+            <div class="main-nav-wrapper">
+               <ul class="site-nav">
+                  <li class="main-nav-item left"><a class="main-nav-link" href="blank.html">информация</a></li>
+                  <li class="main-nav-item left"><a class="main-nav-link" href="blank.html">фото и видео</a></li>
+                  <li class="main-nav-item right"><a class="main-nav-link" href="blank.html">карта штата</a></li>
+                  <li class="main-nav-item right"><a class="main-nav-link" href="catalog.html">гостиницы</a></li>
+               </ul>
+            </div>
          </nav>
       </header>
       <main class="page-main">
-         <div class="page-main-intro">
-            <img class="page-main-img" src="img/sedona.png" width="1200" height="509" alt="Добро пожаловать в Седону">
+         <div class="promo">
+            <div class="page-main-intro">
+               <img class="main-image" src="img/welcome-photo.png" width="1200" height="509" alt="Виды Седоны">
+               <img class="main-image-text" src="img/welcome-text.svg" alt="Добро пожаловать в великолепную Седону!">
+            </div>
+            <h1 class="visually-hidden">Седона — городок в Аризоне</h1>
+            <b class="page-main-title">Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</b>
+            <p class="page-main-text">Рассмотрим 5 причин, по которым Седона круче чем Гранд каньон!</p>
          </div>
-         <h1 class="visually-hidden">Седона — городок в Аризоне</h1>
-         <b class="page-main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-         <p class="page-main-text">Рассмотрим 5 причин, по которым Седона круче чем Гранд каньон!</p>
          <section class="features">
             <h2 class="visually-hidden">Преимущества Седоны</h2>
             <div class="features-main">
                <div class="features-description">
                   <h3 class="features-title">Настоящий городок</h3>
-                  <p class="features-number">&ndash; №1 &ndash;
-                  </p>
+                  <p class="features-number">&ndash; №1 &ndash;</p>
                   <p class="features-text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
                </div>
                <div class="features-img-wrapper">
@@ -40,54 +44,53 @@
                </div>
             </div>
             <ul class="advice">
-               <li class="advice-item advice-item-house">
-                <img class="house-img" src="img/house.svg" width="74,07" height="69,96" alt="Жилье">
+               <li class="house">
+                  <img class="house-img" src="img/house.svg" width="74" height="70" alt="Жилье">
                   <h3 class="advice-title">Жилье</h3>
                   <p class="advice-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                </li>
-               <li class="advice-item advice-item-food">
-                <img class="food-img" src="img/food.svg" width="74,07" height="69,96" alt="Еда">
+               <li class="food">
+                  <img class="food-img" src="img/food.svg" width="74" height="70" alt="Еда">
                   <h3 class="advice-title">Еда</h3>
                   <p class="advice-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                </li>
-               <li class="advice-item advice-item-souvenir">
-                <img class="gift-img" src="img/gift.svg" width="74,07" height="69,96" alt="Сувениры">
+               <li class="gift">
+                  <img class="gift-img" src="img/gift.svg" width="74" height="70" alt="Сувениры">
                   <h3 class="advice-title">Сувениры</h3>
                   <p class="advice-text">Не только китайского, но и местного производства!</p>
                </li>
             </ul>
-            <div class="features-main features-main-reverse">
-               <div class="features-description">
-                  <h3 class="features-title">Там есть мост дьявола</h3>
-                  <p class="features-number">&ndash; №2 &ndash;
-                  </p>
-                  <p class="features-text">Да, по нему можно пройти! Если конечно вы осмелитесь
-                  </p>
-               </div>
+            <div class="features-main">
                <div class="features-image-wrapper">
                   <img class="features-img" src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
+               </div>
+               <div class="features-description">
+                  <h3 class="features-title-devil">Там есть мост дьявола</h3>
+                  <p class="features-number-devil">&ndash; №2 &ndash;</p>
+                  <p class="features-text-devil">Да, по нему можно пройти! Если конечно вы осмелитесь
+                  </p>
                </div>
             </div>
             <div class="features-additional">
                <div class="features-additional-item">
-                  <h3 class="features-title">Небольшая площадь</h3>
-                  <p class="features-number">&ndash; №3 &ndash;
+                  <h3 class="features-title-add features-title-add-first">Небольшая <br> площадь</h3>
+                  <p class="features-number-add features-number-add-first">&ndash; №3 &ndash;
                   </p>
-                  <p class="features-text">Все достопримечательности находятся очень близко
-                  </p>
-               </div>
-               <div class="features-additional-item">
-                  <h3 class="features-title">Красивая дорога</h3>
-                  <p class="features-number">&ndash; №4 &ndash;
-                  </p>
-                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!
+                  <p class="features-text-add features-text-add-first">Все достопримечательности находятся очень близко
                   </p>
                </div>
                <div class="features-additional-item">
-                  <h3 class="features-title">Мало туристов</h3>
-                  <p class="features-number">&ndash; №5 &ndash;
+                  <h3 class="features-title-add features-title-add-second">Красивая <br> дорога</h3>
+                  <p class="features-number-add features-number-add-second">&ndash; №4 &ndash;
                   </p>
-                  <p class="features-text">Большинство едет в гранд каньон и толпится там
+                  <p class="features-text-add features-text-add-second">Ехать в Седону из Лас-Вегаса совсем не скучно!
+                  </p>
+               </div>
+               <div class="features-additional-item">
+                  <h3 class="features-title-add features-title-add-third">Мало <br> туристов</h3>
+                  <p class="features-number-add features-number-add-third">&ndash; №5 &ndash;
+                  </p>
+                  <p class="features-text-add features-text-add-third">Большинство едет в гранд каньон и толпится там
                   </p>
                </div>
             </div>
@@ -101,14 +104,14 @@
                <label class="form-search-label" for="arrival">Дата заезда:</label>
                <input class="form-search-input-text" type="text" name="arrival" id="arrival" placeholder="24 апреля 2017" required>
                <button class="form-search-calendar" type="button" aria-label="Календарь">
-                  <img class="calendar-img" src="img/calendar.svg" width="21px" height="23px" alt="Календарь">
+               <img class="calendar-img" src="img/calendar.svg" width="21" height="23" alt="Календарь">
                </button>
             </div>
             <div class="form-search-input">
                <label class="form-search-label" for="departure">Дата выезда:</label>
                <input class="form-search-input-text" type="text" name="departure" id="departure" placeholder="4 июля 2017" required>
                <button class="form-search-calendar" type="button" aria-label="Календарь">
-                  <img class="calendar-img" src="img/calendar.svg" width="21px" height="23px" alt="Календарь">
+               <img class="calendar-img" src="img/calendar.svg" width="21" height="23" alt="Календарь">
                </button>
             </div>
             <div class="form-search-input">
@@ -133,26 +136,24 @@
          </section>
       </main>
       <footer class="page-footer">
-         <div class="page-footer-down">
-            <b class="page-footer-hashtag">#visitsedona</b>
-         </div>
-         <div class="phone-number">
+         <div class="page-footer-down page-footer-down-first">
+            <h2 class="page-footer-hashtag">#visitsedona</h2>
             <a href="#" class="phone-number">тел: +7(495) 666-01-66</a>
          </div>
-         <div class="page-footer-down">
+         <div class="page-footer-down page-footer-down-second">
             <ul class="social-links">
-               <li class="social-links-item"><a social-links-item href="https://twitter.com/?lang=ru"><img class="twitter-img" src="img/twitter.svg" width="20" height="16" alt="Twitter"></a></li>
-               <li class="social-links-item"><a social-links-item href="https://www.facebook.com/"><img class="facebook-img" src="img/facebook.svg" width="20" height="16" alt="Facebook"></a></li>
-               <li class="social-links-item"><a social-links-item href="https://www.youtube.com/">
-                <img class="youtube-img" src="img/youtube.svg" width="20" height="16" alt="Youtube">
-              </a>
-            </li>
+               <li class="social-links-item"><a class=social-links-item href="https://twitter.com/?lang=ru"><img class="twitter-img" src="img/icon-twitter.svg" width="20" height="16" alt="Twitter"></a></li>
+               <li class="social-links-item"><a class=social-links-item href="https://www.facebook.com/"><img class="facebook-img" src="img/icon-facebook.svg" width="12" height="22" alt="Facebook"></a></li>
+               <li class="social-links-item"><a class=social-links-item href="https://www.youtube.com/">
+                  <img class="youtube-img" src="img/icon-youtube.svg" width="20" height="16" alt="Youtube">
+                  </a>
+               </li>
             </ul>
          </div>
-         <div class="page-footer-down">
+         <div class="page-footer-down page-footer-down-three">
             <span class="page-footer-copyright-text">Website by</span>
             <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy">
-               <img class="logo-html-img" src="img/logo-htmlacademy.svg" width="113,98" height="39,78" alt="Логотип HTML Academy">
+            <img class="logo-html-img" src="img/logo-htmlacademy.svg" width="114" height="40" alt="Логотип HTML Academy">
             </a>
          </div>
       </footer>
