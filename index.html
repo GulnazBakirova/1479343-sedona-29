@@ -10,7 +10,8 @@
    <body class="page-body">
       <header class="page-header">
          <nav class="main-nav">
-            <img class="main-header-logo" src="img/logo.svg" width="138" height="70" alt="Логотип Седоны">
+            <a class="main-header-logo">
+            <img class="main-header-logo" src="img/logo.svg" width="138" height="70" alt="Логотип Седоны"></a>
             <div class="main-nav-wrapper">
                <ul class="site-nav">
                   <li class="main-nav-item left"><a class="main-nav-link" href="blank.html">информация</a></li>
@@ -43,50 +44,56 @@
                   <img class="features-img" src="img/cafe.jpg" width="800" height="256" alt="Кафе в Седоне">
                </div>
             </div>
-            <ul class="advice">
-               <li class="house">
-                  <img class="house-img" src="img/house.svg" width="74" height="70" alt="Жилье">
+            <ul class="advice reset-list">
+               <li class="house advice-item">
+                  <div class="house-pic">
+                     <img class="house-img" src="img/house.svg" width="74" height="70" alt="Жилье">
+                  </div>
                   <h3 class="advice-title">Жилье</h3>
-                  <p class="advice-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  <p class="advice-text house-text">Рекомендуем пожить в настоящем <br> мотеле, все как в кино!</p>
                </li>
-               <li class="food">
-                  <img class="food-img" src="img/food.svg" width="74" height="70" alt="Еда">
+               <li class="food advice-item">
+                  <div class="food-pic">
+                     <img class="food-img" src="img/food.svg" width="74" height="70" alt="Еда">
+                  </div>
                   <h3 class="advice-title">Еда</h3>
-                  <p class="advice-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="advice-text food-text">Всегда заказывайте фирменный бургер, <br> вы не разочаруетесь!</p>
                </li>
-               <li class="gift">
-                  <img class="gift-img" src="img/gift.svg" width="74" height="70" alt="Сувениры">
+               <li class="gift advice-item">
+                  <div class="gift-pic">
+                     <img class="gift-img" src="img/gift.svg" width="74" height="70" alt="Сувениры">
+                  </div>
                   <h3 class="advice-title">Сувениры</h3>
-                  <p class="advice-text">Не только китайского, но и местного производства!</p>
+                  <p class="advice-text">Не только китайского, но и местного <br> производства!</p>
                </li>
             </ul>
             <div class="features-main">
                <div class="features-image-wrapper">
                   <img class="features-img" src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
                </div>
-               <div class="features-description">
-                  <h3 class="features-title-devil">Там есть мост дьявола</h3>
+               <div class="features-description-devil">
+                  <h3 class="features-title-devil">Там есть <br> мост дьявола</h3>
                   <p class="features-number-devil">&ndash; №2 &ndash;</p>
-                  <p class="features-text-devil">Да, по нему можно пройти! Если конечно вы осмелитесь
+                  <p class="features-text-devil">Да, по нему можно пройти! Если конечно <br> вы осмелитесь
                   </p>
                </div>
             </div>
             <div class="features-additional">
-               <div class="features-additional-item">
+               <div class="features-additional-item features-additional-item-first">
                   <h3 class="features-title-add features-title-add-first">Небольшая <br> площадь</h3>
                   <p class="features-number-add features-number-add-first">&ndash; №3 &ndash;
                   </p>
-                  <p class="features-text-add features-text-add-first">Все достопримечательности находятся очень близко
+                  <p class="features-text-add features-text-add-first">Все достопримечательности <br> находятся очень близко
                   </p>
                </div>
-               <div class="features-additional-item">
+               <div class="features-additional-item features-additional-item-second">
                   <h3 class="features-title-add features-title-add-second">Красивая <br> дорога</h3>
                   <p class="features-number-add features-number-add-second">&ndash; №4 &ndash;
                   </p>
                   <p class="features-text-add features-text-add-second">Ехать в Седону из Лас-Вегаса совсем не скучно!
                   </p>
                </div>
-               <div class="features-additional-item">
+               <div class="features-additional-item features-additional-item-third">
                   <h3 class="features-title-add features-title-add-third">Мало <br> туристов</h3>
                   <p class="features-number-add features-number-add-third">&ndash; №5 &ndash;
                   </p>
@@ -96,7 +103,9 @@
             </div>
          </section>
          <section class="search-hotel">
-            <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
+            <h2 class="visually-hidden" style="
+               display:none;
+               ">Форма поиска гостиницы в Седоне</h2>
             <p class="search-hotel-title">Заинтересовались?</p>
             <p class="search-hotel-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <button class="button search-hotel-button" type="button">Поиск гостиницы в Седоне</button>
@@ -132,9 +141,10 @@
          </section>
          <section class="page-main-map">
             <h2 class="visually-hidden">Карта</h2>
-            <img class="map-img" src="map.png" width="1280" height="747" alt="Карта Седоны">
+            <img class="map-img" src="img/map.png" width="1199px" height="594px" alt="Карта Седоны">
          </section>
       </main>
+
       <footer class="page-footer">
          <div class="page-footer-down page-footer-down-first">
             <h2 class="page-footer-hashtag">#visitsedona</h2>

@@ -46,12 +46,6 @@ body {
   font-weight: bold;
 }
 
-.site-nav {
-  text-decoration: none;
-  list-style: none;
-  color: var(--black);
-}
-
 .site-nav a:hover,
 .site-nav a:focus {
   background-color: var(--white);
@@ -309,192 +303,6 @@ body {
 }
 
 
-/* ====== Catalog ====== */
-
-
-/* ====== Filters ====== */
-
-
-/* ==прописываю черный фон для фильтров, чтобы не терялись из-за своего белого шрифта или нужно поменять?
-   ==нужно изменить стиль галочек
-*/
-
-.form-filters-legend {
-  background-color: var(--black);
-  color: var(--white);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.form-filters-label {
-  background-color: var(--black);
-  color: var(--white);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.form-filters-input-text {
-  text-align: center;
-  background-color: var(--black);
-  color: var(--white);
-}
-
-.form-filters-button {
-  text-transform: uppercase;
-  background-color: var(--black);
-  color: var(--white);
-}
-
-.form-filters-label-checkbox {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  background-color: var(--black);
-  color: var(--white);
-}
-
-.form-filters-input {
-  list-style: none;
-}
-
-
-/* ====== Hotels ======*/
-
-
-/* Не установила стили для иконок вверх и вниз */
-
-.catalog-sort {
-  list-style: none;
-}
-
-.catalog-sort-direction {
-  list-style: none;
-  /* ====== иконки вверх и вниз ======*/
-}
-
-.hotel-name,
-.hotel-link {
-  text-decoration: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  background-color: var(--white);
-  color: var(--black);
-}
-
-.hotel-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  background-color: var(--white);
-  color: var(--black);
-}
-
-.hotel-button {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.button-blue {
-  text-decoration: none;
-  background-color: var(--basic-blue);
-  color: var(--white);
-}
-
-.button-brown {
-  text-decoration: none;
-  background-color: var(--brown);
-  color: var(--white);
-}
-
-.hotel-rating-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  background-color: var(--popup-search-chart-color);
-  color: var(--rating);
-}
-
-.visually-hidden {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.catalog-result {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  background-color: var(--white);
-  color: var(--black);
-}
-
-.catalog-sort-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
-  background-color: var(--popup-search-chart-color);
-  color: var(--rating);
-}
-
-.sort-type-link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
-  background-color: var(--white);
-  color: var(--black);
-  mix-blend-mode: normal;
-  opacity: 0.3;
-}
-
-.sort-type-link-active {
-  text-decoration: none;
-  background-color: var(--white);
-  color: var(--basic-blue);
-}
-
-
-/* ====== Потом распределю ======*/
-
-
-/* ====== Цветная обводка ======*/
-
-.page-header {
-  margin-bottom: 0;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-}
-
-.main-header-logo {
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
-}
-
-.page-header {
-  margin-bottom: 0;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-}
-
-.page-footer {
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
-}
-
-
 /* ====== Header ======*/
 
 header,
@@ -582,18 +390,6 @@ footer {
 }
 
 
-/* ====== Жилье, еда, сувениры ======*/
-
-.advice {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 64px;
-  padding: 82px;
-  list-style: none;
-  column-gap: 124px;
-}
-
-
 /* ====== Features ======*/
 
 .features {
@@ -650,56 +446,6 @@ footer {
   padding-bottom: 54px;
   margin-left: 52px;
   margin-right: 51px;
-}
-
-.features-title-devil,
-.features-number-devil,
-.features-text-devil {
-  text-align: center;
-  color: var(--white);
-  background-color: var(--basic-blue)
-}
-
-.features-title-devil {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  margin-top: 50px;
-  margin-left: 126px;
-  margin-right: 125px;
-}
-
-.features-number-devil {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.features-text-devil {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  margin-top: 23px;
-  margin-bottom: 51px;
-  margin-left: 50px;
-  margin-right: 49px;
-}
-
-
-/* ====== Небольшая площадь, красивая дорога, мало туристов ======*/
-
-.features-additional {
-  display: grid;
-  grid-auto-flow: column;
-  padding-top: 47px;
-  padding-left: 96px;
-  padding-right: 77px;
-  padding-bottom: 54px;
-  list-style: none;
-  column-gap: 168px;
 }
 
 
@@ -805,3 +551,479 @@ footer {
 }
 
 
+/* ====== Изменения по последнему дз ======*/
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2.style {
+  display: none;
+}
+
+.site-nav {
+  text-decoration: none;
+  list-style: none;
+  color: var(--black);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.house {
+  width: 254px;
+  padding-top: 60px;
+  padding-bottom: 82px;
+  padding-left: 73px;
+}
+
+.food {
+  width: 297px;
+  padding-top: 61px;
+  padding-bottom: 82px;
+}
+
+.gift {
+  padding-top: 56px;
+  padding-bottom: 81px;
+  padding-right: 65px;
+}
+
+.features-title-devil,
+.features-number-devil,
+.features-text-devil {
+  text-align: center;
+  color: var(--white);
+  background-color: var(--basic-blue)
+}
+
+.features-title-devil {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  margin-top: 50px;
+}
+
+.features-number-devil {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features-text-devil {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 51px;
+}
+
+.features-description-devil {
+  margin-right: 49px;
+  margin-left: 50px;
+}
+
+.features-additional {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.features-additional-item-first {
+  padding-top: 47px;
+  padding-bottom: 54px;
+  padding-left: 96px;
+}
+
+.features-additional-item-second {
+  width: 258px;
+  padding-top: 47px;
+  padding-bottom: 54px;
+}
+
+.features-additional-item-third {
+  width: 246px;
+  padding-top: 47px;
+  padding-bottom: 54px;
+  padding-right: 77px;
+}
+
+
+/* ====== Catalog======*/
+
+.catalog-page {
+  width: 1200px;
+  margin-top: -14px;
+}
+
+.filter {
+  width: 100%;
+  display: block;
+  list-style: none;
+  color: var(--white);
+  background: #4b769e url("../img/blur.jpg") no-repeat 50% 20%;
+  background-size: 1200px 217px;
+}
+
+.filters-title {
+  color: var(--white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.form-filters-checkbox {
+  color: var(--white);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.filter h2 {
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.infrastructure {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  float: left;
+}
+
+.type-of-house {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  float: left;
+}
+
+.price {
+  display: inline-block;
+}
+
+.min-price,
+.max-price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.show-btn {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  background: none;
+  color: var(--white);
+  border: white;
+  text-transform: uppercase;
+}
+
+.catalog {
+  background: var(--white);
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-result-wrapper {
+  display: inline-block;
+  width: 235px;
+  padding: 30px 0;
+  padding-left: 72px;
+  vertical-align: top;
+  line-height: 0;
+  box-sizing: border-box;
+}
+
+.catalog-result-wrapper {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel-container {
+  display: inline-block;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 2px;
+  width: 778px;
+  vertical-align: top;
+}
+
+.sorting {
+  display: inline-block;
+  width: 780px;
+  padding: 36px 0 32px;
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: top;
+}
+
+.catalog-sort {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+}
+
+.sort-type-item,
+.sort-type-link {
+  display: inline-block;
+  padding-left: 32px;
+  list-style: none;
+  vertical-align: top;
+}
+
+.catalog-sort li:first-child {
+  padding-left: 40px;
+}
+
+.catalog-sort a {
+  text-decoration: none;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+
+/* ====== Hotels старое ======*/
+
+
+/* Не установила стили для иконок вверх и вниз */
+
+.catalog-sort {
+  list-style: none;
+}
+
+
+/* ====== иконки вверх и вниз ======*/
+
+.hotel-name,
+.hotel-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.hotel-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.hotel-button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button-blue {
+  text-decoration: none;
+  background-color: var(--basic-blue);
+  color: var(--white);
+}
+
+.button-brown {
+  text-decoration: none;
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.hotel-rating-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--popup-search-chart-color);
+  color: var(--rating);
+}
+
+.visually-hidden {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.catalog-result-wrapper span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.sorting span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: var(--popup-search-chart-color);
+  color: var(--rating);
+}
+
+.sort-type-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: var(--white);
+  color: var(--black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.sort-type-link-active {
+  text-decoration: none;
+  background-color: var(--white);
+  color: var(--basic-blue);
+}
+
+
+/* ====== Hotels новое ======*/
+
+.hotel {
+  background: var(--white);
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-image-wrapper {
+  display: inline-block;
+  padding: 30px 0;
+  padding-left: 73px;
+  line-height: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.hotel-container {
+  display: inline-block;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 2px;
+  vertical-align: top;
+}
+
+.hotel-image {
+  width: 135px;
+  height: 90px;
+}
+
+.hotel-name a {
+  display: inline-block;
+  margin-bottom: 7px;
+  line-height: 26px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.hotel-name a:hover {
+  color: #81b3d2;
+}
+
+.hotel-name a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-container h2 {
+  font-size: 21px;
+}
+
+.hotel-text {
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: top;
+}
+
+.hotel-container p {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.hotel-button {
+  display: inline-block;
+  padding: 3px 16px;
+  margin-right: 6px;
+  vertical-align: top;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.button-blue {
+  color: var(--white);
+  background-color: #81b3d2;
+}
+
+.button-blue:hover {
+  background: #669ec0;
+}
+
+.button-blue:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #5496bd;
+}
+
+.hotel-booking {
+  display: inline-block;
+  width: 142px;
+  vertical-align: top;
+}
+
+.button-brown {
+  color: var(--white);
+  background-color: #766357;
+}
+
+.button-brown:hover {
+  background: #604e43;
+}
+
+.button-brown:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #503e33;
+}
+
+.hotel-rating {
+  float: right;
+  width: 185px;
+  padding-top: 28px;
+}
+
+.hotel-rating .hotel-stars {
+  float: right;
+  margin-right: 71px;
+  margin-bottom: 43px;
+  font-size: 18px;
+  color: #81b3d2;
+}
+
+.hotel-rating .hotel-rating-text {
+  float: right;
+  padding: 3px 13px;
+  margin-right: 72px;
+  background: #f2f2f2;
+}
