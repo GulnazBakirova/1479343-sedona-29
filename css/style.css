@@ -340,37 +340,26 @@ footer {
   background-color: var(--white);
 }
 
-.main-nav {
-  display: block;
-  list-style: none;
-  padding: 0;
-  justify-content: center;
-}
 
 .main-nav {
   height: 56px;
-  display: block;
-  padding: 0;
+  list-style: none;
 }
 
 .main-nav-item {
-  display: inline-block;
-  width: 280px;
   line-height: 26px;
-  vertical-align: top;
   box-sizing: border-box;
   padding-top: 15px;
   padding-bottom: 15px;
+  width: 25%;
 }
 
-.main-navigation .left {
-  padding-left: 72px;
+li.main-navigation.left {
   text-align: left;
 }
 
-.main-navigation .right {
+li.main-navigation.right {
   text-align: right;
-  padding-right: 72px;
 }
 
 .main-header-logo {
@@ -527,7 +516,8 @@ footer {
 }
 
 .page-footer-down-second .social-links-item {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   width: 46px;
   height: 48px;
   margin-right: 6px;
@@ -542,35 +532,24 @@ footer {
 
 .social-links-item,
 .twitter-img {
-  display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
 .social-links-item,
 .facebook-img {
-  display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
 .social-links-item,
 .youtube-img {
-  display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
 .page-footer-down-three,
 .logo-html-img {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.page-footer-down-first,
-.phone-number {
-  display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
@@ -724,12 +703,11 @@ ul {
 }
 
 .hotel-container {
-  display: inline-block;
-  padding-top: 25px;
-  padding-bottom: 30px;
-  padding-left: 2px;
-  width: 778px;
-  vertical-align: top;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30px;
+  width: 800px;
 }
 
 .sorting {
@@ -882,14 +860,6 @@ ul {
   line-height: 0;
   vertical-align: top;
   box-sizing: border-box;
-}
-
-.hotel-container {
-  display: inline-block;
-  padding-top: 25px;
-  padding-bottom: 30px;
-  padding-left: 2px;
-  vertical-align: top;
 }
 
 .hotel-image {
@@ -1111,10 +1081,6 @@ ul {
   padding: 0;
   list-style: none;
   min-height: 56px;
-}
-
-.site-nav a {
-  display: block;
 }
 
 .main-nav-item .left {
