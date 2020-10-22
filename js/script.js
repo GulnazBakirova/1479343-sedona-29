@@ -1,6 +1,6 @@
-const link = document.querySelector(".index-open-search-form");
-  let searchForm = document.querySelector(".index-search-form");
-  let date = searchForm.querySelector("#search-form-date-arrival");
+ const link = document.querySelector(".search-btn");
+   const searchForm = document.querySelector(".search-form");
+   const date = searchForm.querySelector("#search-form-date-arrival");
 
   link.addEventListener("click", function(event) {
     event.preventDefault();
