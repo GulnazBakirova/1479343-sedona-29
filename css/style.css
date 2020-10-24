@@ -620,6 +620,7 @@ li.main-nav-item.right {
 
 .calendar-svg:active {
   fill: var(--basic-blue);
+  background-color: inherit;
 }
 
 
@@ -709,6 +710,7 @@ left: 196px;
   background-color: var(--popup-search-chart-color);
   margin-top: -3px;
   margin-left: -7px;
+  font-size: 14px;
 }
 
 
@@ -1756,7 +1758,7 @@ background-color: var(--dark-brown);
 @-webkit-keyframes animateBottom {
   from {
     top: 0px;
-    opacity: 1;
+    opacity: 0;
   }
   to {
     top: 500px;
@@ -1767,13 +1769,14 @@ background-color: var(--dark-brown);
 @keyframes animateBottom {
   from {
     top: 0px;
-    opacity: 1;
+    opacity: 0;
   }
   to {
     top: 300px;
-    opacity: 0;
+    opacity: 1;
   }
 }
+
 @keyframes shake {
   0%,
   100% {
