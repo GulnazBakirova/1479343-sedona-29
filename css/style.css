@@ -279,19 +279,23 @@ li.main-nav-item.right {
 .features-additional-item-first {
   width: 400px;
   padding-top: 47px;
-  padding-bottom: 54px;
+ margin-bottom: 53px;
 }
 
 .features-additional-item-second {
   width: 400px;
   padding-top: 47px;
-  padding-bottom: 54px;
+  margin-bottom: 53px;
 }
 
 .features-additional-item-third {
   width: 400px;
   padding-top: 47px;
-  padding-bottom: 54px;
+  margin-bottom: 53px;
+}
+
+.features-additional-item {
+
 }
 
 .features-title-add {
@@ -393,9 +397,9 @@ li.main-nav-item.right {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  margin-top: 24px;
-  margin-left: 50px;
-  margin-right: 55px;
+  margin-top: 25px;
+  margin-left: 51px;
+  margin-right: 51px;
   white-space: nowrap;
 }
 
@@ -525,7 +529,7 @@ li.main-nav-item.right {
   -ms-flex-align: center;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin: -2px;
 }
 
 .index-search-form-item {
@@ -541,6 +545,7 @@ li.main-nav-item.right {
   list-style: none;
 }
 
+
 .search-form-title {
   width: 100%;
   margin-bottom: 55px;
@@ -552,12 +557,11 @@ li.main-nav-item.right {
   bottom: 0;
   left: calc(50% - 284px);
   width: 568px;
-  padding-bottom: 10px;
   padding: 30px 0;
   margin: 0;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: bold;
   color: var(--white);
   text-transform: uppercase;
   text-align: center;
@@ -688,6 +692,7 @@ li.main-nav-item.right {
 
 .plus {
   padding-bottom: 2px;
+  padding-right: 4px;
 }
 
 .search-form-date-arrival {
@@ -713,8 +718,8 @@ li.main-nav-item.right {
 
 .children-label {
   width: 63px;
-  margin-right: 16px;
-  margin-top: -4px;
+  margin-right: 27px;
+  margin-top: -2px;
 }
 
 .search-form-children-amount {
@@ -1532,11 +1537,15 @@ footer {
 }
 
 .advice-title {
-  margin-top: 26px;
+  margin-top: 25px;
 }
 
 .advice-text {
   margin-top: 25px;
+}
+
+.food-text {
+  margin-top: 28px;
 }
 
 .features-number-devil {
@@ -1549,6 +1558,10 @@ footer {
 
 .features-title-add {
   margin-top: 1px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .features-number-add {
@@ -1556,17 +1569,17 @@ footer {
 }
 
 .features-text-add {
-  margin-top: 24px;
+  margin-top: 23px;
 }
 
 .date-arrival-label {
-  margin-top: 1px;
-  margin-left: -11px;
+  margin-top: 0px;
+  margin-left: -13px;
 }
 
 .date-departure-label {
   margin-top: 1px;
-  margin-left: -11px;
+  margin-left: -12px;
 }
 
 .adult-amount {
