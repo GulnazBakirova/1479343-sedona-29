@@ -119,17 +119,17 @@ footer {
 .page-main-intro {
   position: relative;
   height: 508px;
-  background: #517ca4 url("../img/mountains.jpg") no-repeat 50% 21%;
+  background: var(--dark-blue) url("../img/mountains.jpg") no-repeat 50% 21%;
 }
 
 .page-main-intro::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 1200px;
   height: 57px;
-  background: url(../img/mask.png) no-repeat 50% 50%;
+  background: url("../img/mask.png") no-repeat 50% 50%;
 }
 
 .main-nav {
@@ -279,7 +279,7 @@ li.main-nav-item.right {
 .features-additional-item-first {
   width: 400px;
   padding-top: 47px;
- margin-bottom: 53px;
+  margin-bottom: 53px;
 }
 
 .features-additional-item-second {
@@ -294,9 +294,7 @@ li.main-nav-item.right {
   margin-bottom: 53px;
 }
 
-.features-additional-item {
-
-}
+.features-additional-item {}
 
 .features-title-add {
   background-color: var(--features-background-gray);
@@ -473,7 +471,7 @@ li.main-nav-item.right {
   width: 400px;
   padding: 0;
   margin: 0;
-  margin-top: -54px;
+  margin-top: -56px;
   margin-bottom: 22px;
   font-size: 30px;
   line-height: 36px;
@@ -545,7 +543,6 @@ li.main-nav-item.right {
   list-style: none;
 }
 
-
 .search-form-title {
   width: 100%;
   margin-bottom: 55px;
@@ -611,14 +608,20 @@ li.main-nav-item.right {
 
 .calendar-svg {
   position: absolute;
-  top: 8px;
-  right: 4px;
+  top: 7px;
+  right: 0px;
   fill: var(--up-icon);
   border: none;
   background-color: var(--popup-search-chart-color);
-  width: 32px;
-  height: 39px;
-  margin-top: -7px;
+  width: 37px;
+  height: 38px;
+}
+
+.calendar-svg-first  {
+  margin-top: -3px;
+}
+.calendar-svg-second  {
+  margin-top: -6px;
 }
 
 .calendar-svg:hover {
@@ -686,8 +689,8 @@ li.main-nav-item.right {
 }
 
 .minus {
-  padding-bottom: 7px;
-  padding-left: 4px;
+  padding-bottom: 5px;
+  padding-left: 5px;
 }
 
 .plus {
@@ -696,16 +699,17 @@ li.main-nav-item.right {
 }
 
 .search-form-date-arrival {
-  width: 285px;
+  width: 290px;
   background-color: var(--popup-search-chart-color);
-  margin-right: 36px;
+  margin-right: 32px;
+  margin-top: 5px;
 }
 
 .search-form-date-departure {
   color: var(--black);
-  width: 285px;
+  width: 290px;
   background-color: var(--popup-search-chart-color);
-  margin-right: 36px;
+  margin-right: 32px;
 }
 
 .search-form-adult-amount {
@@ -714,6 +718,7 @@ li.main-nav-item.right {
   text-align: center;
   background-color: var(--popup-search-chart-color);
   height: 39px;
+  margin-bottom: 3px;
 }
 
 .children-label {
@@ -740,7 +745,6 @@ li.main-nav-item.right {
   width: 458px;
   padding: 16px 0;
   margin-bottom: 55px;
-  font-family: "PTsansBold", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -842,16 +846,17 @@ footer {
 .page-footer {
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
 .footer-connection {
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .social-links {
   display: flex;
+  text-align: center;
 }
 
 .social-links-item {
@@ -862,8 +867,7 @@ footer {
 
 .footer-academy {
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   margin-right: 140px;
   margin-bottom: 15px;
 }
@@ -895,7 +899,7 @@ footer {
   box-sizing: border-box;
   list-style: none;
   color: var(--white);
-  background: #4b769e url("../img/blur.jpg") no-repeat 50% 20%;
+  background: var(--dark-blue) url("../img/blur.jpg") no-repeat 50% 20%;
   background-size: 1200px 217px;
 }
 
@@ -1158,8 +1162,10 @@ footer {
 }
 
 .hotel-button {
+  display: block;
   padding: 3px 16px;
-  margin-right: 6px;
+  margin-top: 18px;
+  margin-right: 4px;
   vertical-align: top;
   font-weight: 500;
   text-decoration: none;
@@ -1175,7 +1181,7 @@ footer {
 }
 
 .button-blue:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--white);
   background: var(--navy-blue);
 }
 
@@ -1187,6 +1193,7 @@ footer {
 .button-brown {
   color: var(--white);
   background-color: var(--brown);
+  margin-right: -2px;
 }
 
 .button-brown:hover {
@@ -1194,18 +1201,17 @@ footer {
 }
 
 .button-brown:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--white);
   background: var(--dark-brown);
 }
 
 .hotel-rating {
-  float: right;
   width: 185px;
   padding-top: 28px;
 }
 
 .hotel-rating .hotel-stars {
-  float: right;
+  text-align: right;
   margin-right: 71px;
   margin-bottom: 43px;
   font-size: 18px;
@@ -1223,6 +1229,8 @@ footer {
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: var(--white);
+  border: none;
 }
 
 .search-hotel-title {
@@ -1358,7 +1366,7 @@ footer {
 }
 
 .price-controls::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1376,7 +1384,7 @@ footer {
 
 .range-controls .scale {
   height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--white);
 }
 
 .range-controls .bar {
@@ -1389,7 +1397,7 @@ footer {
   position: absolute;
   top: -9px;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 var(--white);
 }
 
 .range-controls .range-toggle:hover {
@@ -1454,7 +1462,7 @@ footer {
   width: 26px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
-  background-color: rgba(0, 0, 0, 0);
+  background-color: inherit;
   background-position: left;
   background-repeat: no-repeat;
   border-radius: 2px;
@@ -1470,7 +1478,7 @@ footer {
   width: 30px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
-  background-color: rgba(0, 0, 0, 0);
+  background-color: inherit;
   border: none;
   cursor: pointer;
 }
@@ -1573,17 +1581,17 @@ footer {
 }
 
 .date-arrival-label {
-  margin-top: 0px;
-  margin-left: -13px;
+  margin-top: 2px;
+  margin-left: -10px;
 }
 
 .date-departure-label {
-  margin-top: 1px;
-  margin-left: -12px;
+  margin-top: 0px;
+  margin-left: -9px;
 }
 
 .adult-amount {
-  margin-top: -3px;
+  margin-top: 0px;
   margin-left: -20px;
 }
 
@@ -1662,6 +1670,10 @@ footer {
   padding-left: 0px;
 }
 
+.hotel-text {
+  margin-bottom: 0;
+}
+
 
 /*======== HOVER ACTIVE ========*/
 
@@ -1672,15 +1684,6 @@ footer {
 .main-nav-link:active {
   color: var(--black);
   opacity: 0.3;
-}
-
-.index-search-form-title:hover {
-  background-color: var(--deep-brown);
-}
-
-.index-search-form-title:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: var(--dark-brown);
 }
 
 .index-search-form-field:hover {
