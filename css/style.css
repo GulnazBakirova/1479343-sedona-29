@@ -24,7 +24,7 @@
   --logo-html: #231F20;
 }
 
-body {
+.page-body {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
@@ -36,9 +36,9 @@ body {
   line-height: 21px;
 }
 
-header,
-main,
-footer {
+.page-header,
+.page-main,
+.page-footer {
   width: 1200px;
   margin: 0 auto;
   background-color: var(--white);
@@ -71,15 +71,8 @@ h2.style {
   display: none;
 }
 
-header,
-main,
-footer {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-header,
-footer {
+.page-header,
+.page-footer {
   text-align: center;
 }
 
@@ -133,7 +126,7 @@ footer {
 }
 
 .main-nav {
-  height: 56px;
+  min-height: 56px;
 }
 
 .main-nav-item {
@@ -149,16 +142,6 @@ li.main-nav-item.left {
 }
 
 li.main-nav-item.right {
-  text-align: right;
-}
-
-.main-nav-item li:nth-child(1) a,
-.main-nav-item li:nth-child(2) a {
-  text-align: left;
-}
-
-.main-nav-item li:nth-child(3) a,
-.main-nav-item li:nth-child(4) a {
   text-align: right;
 }
 
@@ -273,28 +256,26 @@ li.main-nav-item.right {
   box-sizing: border-box;
   justify-content: space-between;
   list-style: none;
-  height: 256px;
+  margin-top: -6px;
 }
 
 .features-additional-item-first {
   width: 400px;
   padding-top: 47px;
-  margin-bottom: 53px;
+  margin-bottom: 44px;
 }
 
 .features-additional-item-second {
   width: 400px;
   padding-top: 47px;
-  margin-bottom: 53px;
+  margin-bottom: 44px;
 }
 
 .features-additional-item-third {
   width: 400px;
   padding-top: 47px;
-  margin-bottom: 53px;
+  margin-bottom: 44px;
 }
-
-.features-additional-item {}
 
 .features-title-add {
   background-color: var(--features-background-gray);
@@ -352,7 +333,7 @@ li.main-nav-item.right {
 }
 
 .features-main {
-  height: 256px;
+  min-height: 256px;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -370,7 +351,6 @@ li.main-nav-item.right {
 
 .features-description {
   width: 400px;
-  height: 256px;
 }
 
 .features-title {
@@ -396,9 +376,8 @@ li.main-nav-item.right {
   font-size: 14px;
   line-height: 21px;
   margin-top: 25px;
-  margin-left: 51px;
-  margin-right: 51px;
-  white-space: nowrap;
+  margin-left: 49px;
+  margin-right: 50px;
 }
 
 .features-title-devil,
@@ -436,6 +415,7 @@ li.main-nav-item.right {
 .features-description-devil {
   margin-right: 49px;
   margin-left: 50px;
+  margin-bottom: -10px;
 }
 
 
@@ -509,7 +489,7 @@ li.main-nav-item.right {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-top: 55px;
+  padding-top: 50px;
   background-color: var(--white);
 }
 
@@ -575,6 +555,7 @@ li.main-nav-item.right {
   color: var(--black);
   text-transform: uppercase;
   border: none;
+  height: 38px;
 }
 
 .index-search-form-amount-people {
@@ -618,10 +599,11 @@ li.main-nav-item.right {
   height: 38px;
 }
 
-.calendar-svg-first  {
+.calendar-svg-first {
   margin-top: -3px;
 }
-.calendar-svg-second  {
+
+.calendar-svg-second {
   margin-top: -6px;
 }
 
@@ -704,6 +686,7 @@ li.main-nav-item.right {
   background-color: var(--popup-search-chart-color);
   margin-right: 32px;
   margin-top: 5px;
+  margin-bottom: -2px;
 }
 
 .search-form-date-departure {
@@ -759,8 +742,8 @@ li.main-nav-item.right {
 
 /* ====== Footer ====== */
 
-footer {
-  height: 120px;
+.page-footer {
+  min-height: 120px;
 }
 
 .page-footer-hashtag {
@@ -769,6 +752,7 @@ footer {
 
 .social-links {
   margin-top: 36px;
+  margin-right: -5px;
 }
 
 .footer-links .social-links-item {
@@ -870,7 +854,11 @@ footer {
   flex-direction: column;
   text-align: center;
   margin-right: 140px;
-  margin-bottom: 15px;
+  padding-top: 37px;
+}
+
+.html-academy {
+  margin-right: -4px;
 }
 
 
@@ -1287,10 +1275,6 @@ footer {
   align-items: center;
 }
 
-.hotel-rating-text {
-  white-space: nowrap;
-}
-
 .filter-menu {
   display: grid;
   grid-template-columns: 18% 18% auto;
@@ -1549,12 +1533,16 @@ footer {
   margin-top: 25px;
 }
 
+.advice-title-souvenir {
+  margin-top: 23px;
+}
+
 .advice-text {
-  margin-top: 25px;
+  margin-top: 23px;
 }
 
 .food-text {
-  margin-top: 28px;
+  margin-top: 25px;
 }
 
 .features-number-devil {
@@ -1582,8 +1570,9 @@ footer {
 }
 
 .date-arrival-label {
-  margin-top: 2px;
   margin-left: -10px;
+  padding-bottom: 0px;
+  padding-top: 15px;
 }
 
 .date-departure-label {
@@ -1633,6 +1622,7 @@ footer {
 
 .hotel-rating-text {
   margin-top: 0px;
+  white-space: nowrap;
 }
 
 .page-footer-hashtag {
