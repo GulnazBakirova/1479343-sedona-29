@@ -219,6 +219,8 @@ li.main-nav-item.right {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+  max-width: 519px;
+  margin-left: 340px;
 }
 
 
@@ -890,6 +892,7 @@ li.main-nav-item.right {
   color: var(--white);
   background: var(--dark-blue) url("../img/blur.jpg") no-repeat 50% 20%;
   background-size: 1200px 217px;
+  background-size: cover;
 }
 
 .min-price,
